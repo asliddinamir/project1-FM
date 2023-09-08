@@ -56,6 +56,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
+    height: 100%;
     background-color: #fff;
     border-radius: 35px;
     position: relative;
@@ -120,18 +121,93 @@ body {
 
 .box2 {
     position: absolute;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: -35px;
+    border-bottom-left-radius: -35px;
     width: 50%;
     right: 0;
     display: flex;
     flex-direction: column;
-    padding-inline: 40px;
+    padding: 40px;
+    padding-top: 8px;
+    background-color: white;
+}
+
+.summary {
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .stats {
-    background: red;
+    margin-bottom: 30px;
+}
+
+.stat1 {
+    background: rgba(255, 85, 85, 0.05);
+    color: #f55;
+}
+
+.stat2 {
+    background: rgba(255, 178, 30, 0.05);
+    color: #ffb21e;
+}
+
+.stat3 {
+    background: rgba(0, 187, 143, 0.05);
+    color: #00bb8f;
+}
+
+.stat4 {
+    background: rgba(17, 37, 214, 0.05);
+    color: #1125d6;
 }
 
 #inline {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-block: 15px;
+    margin-block: 16px;
     width: 100%;
+    border-radius: 10px;
+}
+
+img {
+    z-index: 1;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nums {
+    font-weight: bold;
+    opacity: .5;
+    color: black;
+    font-size: 18px;
+}
+
+.nums small {
+    color: black !important;
+    opacity: 1 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #303B59;
+    color: white;
+    font-size: 18px;
+    padding: 16px 32px;
+    font-weight: bold;
+    border-radius: 128px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.btn:hover {
+    background-color: #2f2ce9
 }
